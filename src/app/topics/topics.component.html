@@ -1,0 +1,11 @@
+<h2>My Topics: </h2>
+<ul class="topics">
+  <li *ngFor="let topic of topics"  (click)="onSelect(topic)"
+  [class.selected]="topic === selectedtopic" >
+      
+    <span class="badge">{{topic.id}}</span> {{topic.name}}
+  </li>
+
+</ul>
+<topic-detail [hero]="selectedtopic"></topic-detail>
+

@@ -1,0 +1,8 @@
+<div *ngIf="topic">
+    <h2>{{topic.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{topic.id}}</div>
+    <div>
+      <label for="topic-name">Hero name: </label>
+      <input id="topic-name" [(ngModel)]="topic.name" placeholder="name">
+    </div>
+    </div>
